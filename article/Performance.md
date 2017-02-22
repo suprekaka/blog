@@ -124,11 +124,11 @@ div.style.marginTop = (margin + 10) + 'px';
 ### re-composite过程
 ![image](https://developers.google.com/web/fundamentals/performance/rendering/images/intro/frame-no-layout-paint.jpg)
 
-如果修改一个`composite only`属性,浏览器会跳过`layout`和`paint`, 直接渲染层合并
+如果修改一个`composite only`属性,浏览器会跳过`layout`和`paint`, 直接渲染层合并, 如`transform`/`opacity`
 
 
 ### CSS属性的性质
-最理想的情况, 我们希望尽可能使用`composite only`属性, 其次优先使用`paint only`属性, 如`transform`/`opacity`
+最理想的情况, 我们希望尽可能使用`composite only`属性, 其次优先使用`paint only`属性
 
 [csstriggers](https://csstriggers.com/)
 
