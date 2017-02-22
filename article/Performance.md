@@ -4,40 +4,8 @@
 # 前言
 性能问题涉及到方方面面:
 
-```
-graph LR
-A-->B
-A-->C
-A-->D
-A-->N
+![image](../asset/images/category.png)
 
-C-->E
-C-->F
-C-->G
-
-N-->O
-N-->Q
-N-->R
-N-->S
-N-->T
-
-
-A(Performance)
-B(HTML)
-C(Javascript)
-D(Style)
-E(ECMAScript)
-F(DOM)
-G(BOM)
-
-N(Network)
-O(Cache)
-Q(HTTP1.1 -> HTTP2.0)
-R(Compress - gzip)
-S(CDN)
-T(etc...)
-
-```
 
 本文主要针对`DOM`部分
 
