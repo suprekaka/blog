@@ -17,7 +17,7 @@
     - CSS属性的性质
   - 优化目标
   - 优化方案
-  - `window.requestAnimationFrame(hanlder:Function)`
+  - `window.requestAnimationFrame(handler:Function)`
   - `window.requestIdleCallback(handler:Function, forceExecuteTime:Number)`
 - ExtJS
   - event listeners
@@ -150,7 +150,7 @@ div.style.marginTop = (margin + 10) + 'px';
 
 ----
 
-## `window.requestAnimationFrame(hanlder:Function)`
+## `window.requestAnimationFrame(handler:Function)`
 首先解决`setTimeout()`和`setInterval()`的弊病, 他们的延时执行, 都是在指定的时间点将`handler`代码加入到线程队列中等待执行, 如果当前线程队列繁忙, 那么`handler`实际执行时间会晚于期望时间.
 
 并且, `setTimeout()`和`setInterval()`的最小精度是4ms
@@ -252,7 +252,7 @@ Ext.resumeLayouts(true);
 ```
 
 > 例如: 向两个容器连续添加多个items, 会导致执行多次`layout`和`render`;
-如果在添加items之前调用`suspendLayout()`, 框架将不会为每个单独的item执行`layout`操作; 
+如果在添加items之前调用`suspendLayout()`, 框架将不会为每个单独的item执行`layout`操作;
 当操作完, 调用`resumeLayouts()`, 框架会执行一次`render`和`layout`
 
 
