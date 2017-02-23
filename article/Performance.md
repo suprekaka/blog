@@ -307,7 +307,7 @@ containerPanel.doLayout();
 ## 性能优化入口
 `shouldComponentUpdate(nextProps:Object, nextState:Object): boolean`
 
-这是一个`leftcycle`函数, 在组件接收到新的`props`或`state`, `render`之前调用. 不会再初始化`initial render`或`frceUpdate()`时调用.
+这是一个`leftcycle`函数, 在组件接收到新的`props`或`state`, `render`之前调用. 不会再初始化`initial render`或`forceUpdate()`时调用.
 
 这是一个性能优化的好时机, 如果觉得`newProps`或`newState`并不需要更新组件, 可以在该方法中返回`false`来阻止触发`render()`.
 
