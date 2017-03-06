@@ -1,39 +1,38 @@
-[TOC]
-- 前言
-  - 性能模型
-- Basic
-  - 浏览器渲染原理
-  - Render
-    - 标准渲染模型
-  - Layout (Reflow in Firefox)
-    - Forced synchronous layouts
-  - Paint
-  - Composite 渲染层合并
-  - Jank or Janky
-  - 渲染过程
-    - reflow过程
-    - re-paint过程
-    - re-composite过程
-    - CSS属性的性质
-  - 优化目标
-  - 优化方案
-  - `window.requestAnimationFrame(handler:Function)`
-  - `window.requestIdleCallback(handler:Function, forceExecuteTime:Number)`
-- ExtJS
-  - event listeners
-    - 1. 确保事件监听只绑定一次
-    - 2. 单次监听
-    - 3. render
-  - 不要使用`doLayout()`和`doComponentLayout()`
-    - `doLayout()`的机制
-  - 减少`container`嵌套
-  - 减少读写DOM
-    - 暂停布局
-    - `Container`的暂停布局
-- airbnb
-- React
-  - `Virtual DOM`
-  - 性能优化入口
+- [前言](前言)
+  - [性能模型](性能模型)
+- [Basic](Basic)
+  - [浏览器渲染原理](浏览器渲染原理)
+  - [Render](Render)
+    - [标准渲染模型](标准渲染模型)
+  - [Layout (Reflow in Firefox)](Layout (Reflow in Firefox))
+    - [Forced synchronous layouts](Forced synchronous layouts)
+  - [Paint](Paint)
+  - [Composite 渲染层合并](Composite 渲染层合并)
+  - [Jank or Janky](Jank or Janky)
+  - [渲染过程](渲染过程)
+    - [reflow过程](reflow过程)
+    - [re-paint过程](re-paint过程)
+    - [re-composite过程](re-composite过程)
+    - [CSS属性的性质](CSS属性的性质)
+  - [优化目标](优化目标)
+  - [优化方案](优化方案)
+  - [window.requestAnimationFrame(handler:Function)](window.requestAnimationFrame(handler:Function))
+  - [window.requestIdleCallback(handler:Function, forceExecuteTime:Number)](window.requestIdleCallback(handler:Function, forceExecuteTime:Number))
+- [ExtJS](ExtJS)
+  - [event listeners](event listeners)
+    - [1. 确保事件监听只绑定一次](1. 确保事件监听只绑定一次)
+    - [2. 单次监听](2. 单次监听)
+    - [3. render](3. render)
+  - [不要使用`doLayout()`和`doComponentLayout()`](不要使用`doLayout()`和`doComponentLayout()`)
+    - [`doLayout()`的机制](`doLayout()`的机制)
+  - [减少`container`嵌套](减少`container`嵌套)
+  - [减少读写DOM](减少读写DOM)
+    - [暂停布局](暂停布局)
+    - [`Container`的暂停布局](`Container`的暂停布局)
+- [airbnb](airbnb)
+- [React](React)
+  - [`Virtual DOM`](`Virtual DOM`)
+  - [性能优化入口](性能优化入口)
 
 ----
 
